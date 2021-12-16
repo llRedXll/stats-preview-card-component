@@ -15,4 +15,44 @@ $white60: hsla(0, 0%, 100%, 0.6);
 body {
     background-color: $darkblue;
     color: $white75;
+    margin: 0;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 'first second';
+    width: 75vw;
+    background-color: $purple;
+
+    &__info {
+        grid-area: first;
+    }
+
+    &__copy {
+
+        & h2 {
+            font-family: 'Lexend Deca', sans-serif;
+        }
+    }
+
+    &__image {
+        grid-area: second;
+        width: 100%;
+        background-image: url('../images/image-header-desktop.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right top;
+        background-color: $violet;
+        background-blend-mode: soft-light;
+        opacity: .7;
+    }
 }
