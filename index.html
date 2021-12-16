@@ -3,31 +3,49 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link rel="stylesheet" href="styles/style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Stats preview card component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
+  <!-- <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  </style> -->
 </head>
 <body>
+<div class="card">
+  <div class="card__info">
+    <div class="card__copy">
+      <h2>Get insights that help your business grow.</h2>
 
-  Get insights that help your business grow.
+      <p>Discover the benefits of data analytics and make better decisions regarding revenue, customer 
+      experience, and overall efficiency.</p>
+    </div>
+    <div class="card__stats">
+      <div>
+      <h4 class="card__stats--header">10k+</h4>
+      <p class="card__stats--copy">companies</p>  
+      </div>
+      <div>
+        <h4 class="card__stats--header">314</h4>
+        <p class="card__stats--copy">templates</p>  
+      </div> 
+      <div>
+        <h4 class="card__stats--header">12m+</h4>
+        <p class="card__stats--copy">queries</p>  
+      </div> 
+    </div>
+  </div>
+  <div class="card__img">
+  </div>
+</div>
 
-  Discover the benefits of data analytics and make better decisions regarding revenue, customer 
-  experience, and overall efficiency.
 
-  10k+ companies
-  314 templates
-  12m+ queries
-
-  <div class="attribution">
+  <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </div> -->
 </body>
 </html>
