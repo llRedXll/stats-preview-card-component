@@ -12,6 +12,7 @@ $white75: hsla(0, 0%, 100%, 0.75);
 // - Slightly transparent white (stat headings)
 $white60: hsla(0, 0%, 100%, 0.6);
 
+
 body {
     background-color: $darkblue;
     color: $white75;
@@ -32,15 +33,59 @@ section {
     grid-template-areas: 'first second';
     width: 75vw;
     background-color: $purple;
+    border-radius: .6rem;
 
     &__info {
         grid-area: first;
+        padding: 5rem;
     }
 
     &__copy {
 
         & h2 {
+            font-family: 'Inter', sans-serif;
+            font-size: 2.2rem;
+            color: $white;
+            font-weight: 700;
+            padding: 0 0 15px 0;
+            margin: 0;
+        }
+
+        & span {
+            color: $violet;
+        }
+
+        & p {
+            font-family: 'Inter', sans-serif;
+            font-weight: 400;
+            font-size: .938rem;
+            color: $white75;
+            line-height: 1.6rem;
+            padding-bottom: 3rem;
+        }
+    }
+
+    &__stats {
+        display: flex;
+        justify-content: space-between;
+
+        &--header {
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+            color: $white;
+            font-size: 1.5rem;
+            padding: 0;
+            margin: 0;
+        }
+
+        &--copy {
             font-family: 'Lexend Deca', sans-serif;
+            color: $white60;
+            text-transform: uppercase;
+            font-size: .75rem;
+            letter-spacing: .1rem;
+            padding: 0;
+            margin: 0;
         }
     }
 
@@ -51,8 +96,9 @@ section {
         background-repeat: no-repeat;
         background-size: cover;
         background-position: right top;
-        background-color: $violet;
+        background-color: #703893;
         background-blend-mode: soft-light;
-        opacity: .7;
+        // opacity: .7;
+        border-radius: 0 .6rem .6rem 0;
     }
 }
